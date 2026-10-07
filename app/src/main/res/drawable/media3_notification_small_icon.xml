@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Overrides Media3's default status-bar icon (same resource name) with the app logo:
+    a solid circle with the three sound arcs cut out, as a single even-odd path so it stays a
+    proper white silhouette in the status bar.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M1,12 A11,11 0 1,0 23,12 A11,11 0 1,0 1,12 Z
+            M6.13,7.68 C9.8,6.58 14.57,6.94 18.23,8.96 L18.23,10.64 C14.57,8.62 9.8,8.26 6.13,9.36 Z
+            M6.87,11.3 C9.98,10.49 13.83,10.79 16.95,12.4 L16.95,13.8 C13.83,12.19 9.98,11.89 6.87,12.7 Z
+            M7.6,14.75 C10.17,14.2 13.1,14.38 15.67,15.59 L15.67,16.69 C13.1,15.48 10.17,15.3 7.6,15.85 Z" />
+</vector>

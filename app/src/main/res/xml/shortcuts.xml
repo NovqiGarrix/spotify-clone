@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Long-press menu on the launcher icon. Order is the display order. The most recently played
+    album or artist is added at runtime by ShortcutPublisher. Each intent is a mymusic:// URI
+    handled by LaunchAction.
+-->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_shortcut_resume"
+        android:shortcutId="resume"
+        android:shortcutLongLabel="@string/shortcut_resume_long"
+        android:shortcutShortLabel="@string/shortcut_resume_short">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mymusic://resume"
+            android:targetClass="dev.novqigarrix.mymusic.MainActivity"
+            android:targetPackage="dev.novqigarrix.mymusic" />
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_shortcut_liked"
+        android:shortcutId="liked_songs"
+        android:shortcutLongLabel="@string/liked_songs"
+        android:shortcutShortLabel="@string/liked_songs">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mymusic://open/playlist:Liked"
+            android:targetClass="dev.novqigarrix.mymusic.MainActivity"
+            android:targetPackage="dev.novqigarrix.mymusic" />
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_shortcut_local_files"
+        android:shortcutId="local_files"
+        android:shortcutLongLabel="@string/local_files"
+        android:shortcutShortLabel="@string/local_files">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mymusic://open/playlist:LocalFiles"
+            android:targetClass="dev.novqigarrix.mymusic.MainActivity"
+            android:targetPackage="dev.novqigarrix.mymusic" />
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/ic_shortcut_library"
+        android:shortcutId="library"
+        android:shortcutLongLabel="@string/nav_library"
+        android:shortcutShortLabel="@string/nav_library">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mymusic://library"
+            android:targetClass="dev.novqigarrix.mymusic.MainActivity"
+            android:targetPackage="dev.novqigarrix.mymusic" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher shortcut icon: 48dp circle with a 24dp glyph, per the app-shortcut icon guidelines. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#FF1ED760"
+        android:pathData="M2,24 A22,22 0 1,0 46,24 A22,22 0 1,0 2,24 Z" />
+    <group
+        android:translateX="12"
+        android:translateY="12">
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M8,5v14l11,-7z" />
+    </group>
+</vector>

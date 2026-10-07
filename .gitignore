@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin
+
+# Claude Code: per-machine settings stay local; shared skills are committed
+.claude/settings.local.json
